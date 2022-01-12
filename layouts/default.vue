@@ -61,7 +61,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Gauss Elimination'
+      title: 'Sosial Printing'
     }
   }
 }
