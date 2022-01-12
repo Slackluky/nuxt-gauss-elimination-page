@@ -4,7 +4,14 @@
       <v-label>Masukkan jumlah Persamaan yang digunakan : </v-label>
       <v-flex class="d-flex flex-row align-items-center">
         <v-text-field v-model="arrLength" outlined style="max-width: 420px;" @keyup.enter.exact="makeArray()" />
-        <v-btn class="ml-4" height="56" flat outlined @click="makeArray()">
+        <v-btn
+          class="ml-4 info"
+          dark
+          height="56"
+          text
+          outlined
+          @click="makeArray()"
+        >
           Buat
         </v-btn>
       </v-flex>
@@ -44,13 +51,13 @@
               </v-card-text>
               <v-divider />
             </v-card>
-            <v-sheet style="width:100%" class="d-flex justify-center">
+            <v-sheet v-if="arrLength > 0" style="width:100%" class="d-flex justify-center">
               <v-btn
                 color="success"
                 class="mx-auto"
                 @click="validate"
               >
-                Validate
+                Hitung
               </v-btn>
             </v-sheet>
           </v-form>
@@ -67,11 +74,14 @@
         </v-card-title>
 
         <v-card-text>
-          <v-list>
+          <v-list v-if="valid">
             <v-list-item v-for="(val, i) in hasilPerhitungan" :key="i">
               <span>X <sub>{{ i }}</sub> = {{ val }} </span>
             </v-list-item>
           </v-list>
+          <v-sheet v-else>
+            <span class="display-1 red--text">Semua field harus diisi</span>
+          </v-sheet>
         </v-card-text>
 
         <v-divider />
@@ -109,7 +119,8 @@ export default {
         [15, 10, 6]
       ],
       hasil: [1900, 3000, 3600],
-      hasilPerhitungan: []
+      hasilPerhitungan: [],
+      valid: false
     }
   },
   methods: {
@@ -131,13 +142,15 @@ export default {
     validate () {
       this.all()
       this.$refs.form.validate()
-      const arr = this.arr.map(function (arr) {
-        return arr.slice()
-      })
-      const hasil = this.hasil.slice()
-      this.hasilPerhitungan = this.solve(arr, hasil)
+      this.valid = this.$refs.form.validate()
+      if (this.$refs.form.validate()) {
+        const arr = this.arr.map(function (arr) {
+          return arr.slice()
+        })
+        const hasil = this.hasil.slice()
+        this.hasilPerhitungan = this.solve(arr, hasil)
+      }
       this.dialog = true
-      console.log()
     },
     all () {
       this.epo = [...Array(this.errLength).keys()].map((k, i) => i)

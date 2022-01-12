@@ -33,7 +33,7 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; {{ new Date().getFullYear() }} by Luky Setiawan</span>
     </v-footer>
   </v-app>
 </template>
@@ -61,7 +61,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Luky Setiawan'
+      title: 'Gauss Elimination'
     }
   }
 }
