@@ -107,7 +107,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <v-dialog v-model="tutorial">
+    <v-dialog v-model="tutorial" width="800">
       <v-stepper v-model="e1">
         <v-stepper-header>
           <v-stepper-step
