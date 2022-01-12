@@ -6,6 +6,10 @@
       app
     >
       <v-toolbar-title v-text="title" />
+      <v-spacer />
+      <v-btn class="error" dark @click="$store.dispatch('auth/logoutAction')">
+        Logout
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container style="height: 100%">
@@ -41,6 +45,7 @@
 <script>
 export default {
   name: 'DefaultLayout',
+  middleware: 'authentication',
   data () {
     return {
       clipped: false,
