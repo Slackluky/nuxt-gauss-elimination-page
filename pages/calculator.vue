@@ -14,6 +14,16 @@
         >
           Buat
         </v-btn>
+        <v-btn
+          class="ml-4 orange"
+          dark
+          height="56"
+          text
+          outlined
+          @click="tutorial = true; e1 = 1"
+        >
+          petunjuk
+        </v-btn>
       </v-flex>
       <v-card flat outlined>
         <v-card-text>
