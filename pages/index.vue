@@ -121,14 +121,14 @@
             </v-flex>
             <v-flex xs12 md4 class="pa-3">
               <v-card>
-                <v-img :src="require('~/assets/img/ganci1.jpeg')" />
-                <v-card-title>Produk 1</v-card-title>
+                <v-img :src="require('~/assets/img/ganci2.jpg')" />
+                <v-card-title>Produk 2</v-card-title>
               </v-card>
             </v-flex>
             <v-flex xs12 md4 class="pa-3">
               <v-card>
-                <v-img :src="require('~/assets/img/ganci1.jpeg')" />
-                <v-card-title>Produk 1</v-card-title>
+                <v-img :src="require('~/assets/img/ganci3.jpg')" />
+                <v-card-title>Produk 3</v-card-title>
               </v-card>
             </v-flex>
           </v-layout>
