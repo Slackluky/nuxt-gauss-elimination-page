@@ -18,7 +18,7 @@
             exact
             to="/calculator"
           >
-            Get Started
+            Perhitungan
           </v-btn>
         </v-layout>
       </v-parallax>
@@ -45,13 +45,15 @@
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-center">
                     <v-avatar size="240">
-                      <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg" />
+                      <v-img :src="require('~/assets/img/bb.jpg')" />
                     </v-avatar>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="d-flex flex-column layout justify-center">
                     <div class="headline text-xs-center">
                       Ridwan M Yusuf
                     </div>
+                    <br>
+                    <span>19330002</span>
                   </v-card-title>
                 </v-card>
               </v-flex>
@@ -59,13 +61,14 @@
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-center">
                     <v-avatar size="240">
-                      <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg" />
+                      <v-img :src="require('~/assets/img/luky.jpg')" />
                     </v-avatar>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="layout d-flex flex-column justify-center">
                     <div class="headline">
                       Luky Setiawan
                     </div>
+                    <span>19330071</span>
                   </v-card-title>
                 </v-card>
               </v-flex>
@@ -73,13 +76,14 @@
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-center">
                     <v-avatar size="240">
-                      <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg" />
+                      <v-img :src="require('~/assets/img/aan.jpg')" />
                     </v-avatar>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="layout d-flex flex-column justify-center">
                     <div class="headline text-xs-center">
                       Septian W Pamungkas
                     </div>
+                    <span>19330019</span>
                   </v-card-title>
                 </v-card>
               </v-flex>
@@ -98,9 +102,41 @@
         </v-layout>
       </v-parallax>
     </section>
-    <section style="height:600px" />
+    <section class="mt-5 mb-5">
+      <v-layout class="text-center flex-column wrap d-flex justify-center">
+        <v-flex xs12 class="my-3">
+          <div class="text-xs-center">
+            <h2 class="headline">
+              Produk Kami
+            </h2>
+          </div>
+        </v-flex>
+        <v-flex xs12>
+          <v-layout class="d-flex flex-row wrap">
+            <v-flex xs12 md4 class="pa-3">
+              <v-card>
+                <v-img :src="require('~/assets/img/ganci1.jpeg')" />
+                <v-card-title>Produk 1</v-card-title>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md4 class="pa-3">
+              <v-card>
+                <v-img :src="require('~/assets/img/ganci1.jpeg')" />
+                <v-card-title>Produk 1</v-card-title>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md4 class="pa-3">
+              <v-card>
+                <v-img :src="require('~/assets/img/ganci1.jpeg')" />
+                <v-card-title>Produk 1</v-card-title>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </section>
     <section>
-      <v-parallax :src="require('~/assets/img/logo.png')" height="380">
+      <v-parallax :src="require('~/assets/img/logo.png')" height="400">
         <v-layout column align-center justify-center>
           <div class="headline white--text mb-3 text-xs-center">
             We are dropping cool news and opportunities on socials
@@ -141,7 +177,7 @@
                 </div>
               </v-card-title>
               <v-card-text>
-                We are not a company. We hate companies. Just imagine us like the guys from the Silicon Valley series.
+                Kapital Printing menawarkan Merchandise custom, Mulai dari Gantungan kunci custom, Plakat custom, SignBoard Custom, Pin Custom, Standee Idol, Tumbler Custom, Dll.
               </v-card-text>
             </v-card>
           </v-flex>

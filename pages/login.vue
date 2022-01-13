@@ -21,7 +21,8 @@
 
 <script>
 export default {
-  name: 'InspirePage',
+  name: 'LoginPage',
+  layout: 'auth',
   data () {
     return {
       rule: {

@@ -11,8 +11,8 @@
         Logout
       </v-btn>
     </v-app-bar>
-    <v-main>
-      <v-container style="height: 100%">
+    <v-main style="background-color: #E6E1DB;">
+      <v-container style="height: 100%;">
         <Nuxt />
       </v-container>
     </v-main>
@@ -66,7 +66,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Sosial Printing'
+      title: 'Kapital Printing'
     }
   }
 }
