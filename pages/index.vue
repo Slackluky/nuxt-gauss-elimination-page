@@ -31,8 +31,32 @@
         class="my-5"
         align-center
       >
-        <v-flex xs12 sm4 class="my-3">
-          <div class="text-xs-center">
+        <v-flex xs12 sm4 class="my-3 align-center">
+          <div class="text-center">
+            <h2 class="headline">
+              Dosen Pengampu
+            </h2>
+          </div>
+        </v-flex>
+        <v-flex xs12>
+          <v-card class="elevation-0 transparent">
+            <v-card-text class="text-center">
+              <v-avatar size="360">
+                <v-img :src="require('~/assets/img/mr.jpg')" />
+              </v-avatar>
+            </v-card-text>
+            <v-card-title primary-title class="layout d-flex flex-column justify-center">
+              <div class="headline">
+                Yumarlin MZ, S.Kom.,M.Pd.,M.Kom
+              </div>
+            </v-card-title>
+          </v-card>
+        </v-flex>
+        <v-flex xs12 style="width:100;">
+          <v-divider class="ma-5" />
+        </v-flex>
+        <v-flex xs12 sm4 class="my-3 align-center">
+          <div class="text-center">
             <h2 class="headline">
               Para Punggawa
             </h2>
