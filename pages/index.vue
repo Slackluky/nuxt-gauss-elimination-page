@@ -72,11 +72,10 @@
                       <v-img :src="require('~/assets/img/bb.jpg')" />
                     </v-avatar>
                   </v-card-text>
-                  <v-card-title primary-title class="d-flex flex-column layout justify-center">
-                    <div class="headline text-xs-center">
+                  <v-card-title primary-title class="d-fex flex-column layout justify-center">
+                    <div class="headline">
                       Ridwan M Yusuf
                     </div>
-                    <br>
                     <span>19330002</span>
                   </v-card-title>
                 </v-card>
